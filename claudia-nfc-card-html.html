@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Claudia Barrón · Quantiq AI — AI agents that sell, book and support your customers 24/7.">
+<title>Claudia Barrón · Quantiq AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Cormorant+Garamond:wght@500;600&family=Sora:wght@500;600;700&display=swap">
+<style>
+/* Layout: single-column pocket card on the Quantiq night ground — identity, one gradient CTA, grouped link rows, socials. Single dark look, matching quantiqai.io. */
+:root{
+  --bg:#060213; --card:rgba(22,14,46,.72); --card-solid:#140C2B; --ink:#F2EEFF; --muted:#9D93BD; --line:rgba(139,92,246,.24);
+  --cyan:#33E0FF; --azure:#4C8DFF; --violet:#8B5CF6; --magenta:#D946EF; --wa:#3DD68C; --neon:#5CDCFA;
+  --grad:linear-gradient(100deg,var(--cyan),var(--azure) 38%,var(--violet) 70%,var(--magenta));
+  --cta:linear-gradient(135deg,var(--violet),var(--magenta) 70%);
+  --name:"Cormorant Garamond","Cormorant",Garamond,Georgia,serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --display:"Sora","Segoe UI",system-ui,sans-serif;
+  --body:"Segoe UI",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding:0 16px;
+  background-image:radial-gradient(60% 40% at 15% 0%,rgba(139,92,246,.28),transparent 70%),radial-gradient(50% 35% at 100% 10%,rgba(51,224,255,.14),transparent 70%);background-repeat:no-repeat}
+.wrap{max-width:440px;margin:0 auto;padding-block:36px 48px;display:flex;flex-direction:column;gap:28px}
+.id{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.logo{width:76px;height:76px;border-radius:20px;border:1px solid var(--line);box-shadow:0 0 28px rgba(51,224,255,.25);display:block}
+h1{font-family:var(--name);font-weight:600;font-size:clamp(44px,12.5vw,58px);line-height:1;margin:0;letter-spacing:.01em;color:var(--neon);text-shadow:0 0 18px rgba(51,200,245,.4);text-wrap:balance}
+.role{margin:0;color:var(--muted);font-weight:500}
+.role b{font-family:var(--display);color:var(--ink);font-weight:600}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--cta);box-shadow:0 0 0 4px rgba(217,70,239,.22)}
+.primary{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--cta);color:#fff;text-decoration:none;padding:18px 20px;border-radius:16px;font-family:var(--display);font-weight:600;font-size:17px;box-shadow:0 10px 30px rgba(217,70,239,.28)}
+.primary small{display:block;font-family:var(--body);font-weight:500;font-size:13px;opacity:.88}
+.group{display:flex;flex-direction:column;gap:10px}
+.label{font-family:var(--display);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin:0}
+.list{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;backdrop-filter:blur(8px)}
+.row{display:flex;align-items:center;gap:14px;padding:15px 16px;color:var(--ink);text-decoration:none;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row:hover{background:rgba(139,92,246,.12)}
+.ico{flex:none;width:38px;height:38px;border-radius:11px;background:rgba(139,92,246,.16);color:var(--cyan);display:grid;place-items:center}
+.ico svg{width:20px;height:20px}
+.ico.wa{color:var(--wa);background:rgba(61,214,140,.12)}
+.txt{flex:1;min-width:0}
+.txt strong{display:block;font-family:var(--display);font-weight:600;font-size:15px}
+.txt span{display:block;font-size:13px;color:var(--muted)}
+.tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:6px;padding:2px 6px}
+.chev{color:var(--muted);flex:none}
+.phone{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.phone .num{font-family:var(--display);font-weight:600;font-size:18px;font-variant-numeric:tabular-nums;user-select:all}
+.copy{font:inherit;font-weight:600;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;cursor:pointer}
+.copy:hover{background:rgba(139,92,246,.12)}
+footer{font-size:13px;color:var(--muted);text-align:center}
+footer em{font-family:var(--serif);font-style:italic;color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="id">
+    <img class="logo" src="data:image/jpeg;base64,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" alt="Quantiq AI logo" width="76" height="76">
+    <h1>Claudia Barrón</h1>
+    <p class="role"><b>Quantiq AI</b> · AI agents that sell, book and support your customers 24/7</p>
+    <span class="status"><i></i>I reply within 24 hours</span>
+  </header>
+
+  <a class="primary" href="https://calendar.quantiqai.io/claudia/discovery-call" target="_blank" rel="noopener">
+    <span>Book a Zoom call<small>20 minutes · No commitment</small></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+
+  <section class="group">
+    <p class="label">Contact</p>
+    <div class="list">
+      <a class="row" href="https://wa.me/18138093374?text=Hi%20Claudia!%20We%20met%20at%20SBE%20Pasadena%20and%20I%27m%20interested%20in%20learning%20more%20about%20AI%20agents%20for%20my%20business." target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></span>
+        <span class="txt"><strong>WhatsApp</strong><span>Message me directly</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="sms:+18138093374?&amp;body=Hi%20Claudia!%20We%20met%20at%20SBE%20Pasadena%20and%20I%27m%20interested%20in%20learning%20more%20about%20AI%20agents%20for%20my%20business.">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5Z"/></svg></span>
+        <span class="txt"><strong>Text message</strong><span>+1 813 809 3374</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="https://quantiqai.io/Tarjeta%20NFC.vcf" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M2 21a8 8 0 0 1 13-6M19 15v6M16 18h6"/></svg></span>
+        <span class="txt"><strong>Save contact</strong><span>Add me to your phone</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="phone">
+      <span class="num" id="num">+1 813 809 3374</span>
+      <button class="copy" id="copyBtn" type="button">Copy number</button>
+    </div>
+  </section>
+
+  <section class="group">
+    <p class="label">See what we build</p>
+    <div class="list">
+      <a class="row" href="https://calendar.quantiqai.io/claudia/discovery-call" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg></span>
+        <span class="txt"><strong>Hear my voice agent</strong><span>Book a call and hear it answer live</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="https://calendar.quantiqai.io/claudia/discovery-call" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M10 15l2 2 4-4"/></svg></span>
+        <span class="txt"><strong>Book a live demo</strong><span>Talk to the agent with me on the call</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="https://app.quantiqai.io/agents/18910231" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg></span>
+        <span class="txt"><strong>Try a Wallet Pass</strong><span>A loyalty card that lives on your phone</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="https://app.quantiqai.io/agents/98102793/diagnostics" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+        <span class="txt"><strong>Free AI diagnostic</strong><span>Find out which agent to build first</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a class="row" href="https://quantiqai.io" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+        <span class="txt"><strong>quantiqai.io</strong><span>Explore all our AI agents</span></span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <footer>Quantiq AI · <em>Your business never sleeps.</em></footer>
+</main>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function(){
+  var b=this, n='+18138093374';
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy number'},1600)}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('num'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Number selected'}
+  try{navigator.clipboard.writeText(n).then(done,sel)}catch(e){sel()}
+});
+</script>
+</body>
+</html>
