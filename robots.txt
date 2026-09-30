@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ClauGithu.github.io/cb-nfc-card/sitemap.xml
